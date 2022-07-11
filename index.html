@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zomato</title>
+    <link rel="shortcut icon" href="https://b.zmtcdn.com/images/logo/zomato_logo_2017.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <div>
+                <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iNzUycHQiIGhlaWdodD0iNzUycHQiIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDc1MiA3NTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiA8cGF0aCBkPSJtMzAwLjc0IDI3MC4yN2MtMTQuNjAyIDcuNzM0NC0yOC4yOTcgMTYuMzk4LTQzLjAyIDI0LjQzLTExLjE2OCA2LjA5NzctNDcuMDU5IDI1LjU1NS01Mi45NDEgMzEuMTM3bC04LjMwNDcgOC4zMjgxYy0xNi4yMTkgMTYuMzU5LTI2LjQ0MSA1MC40OTYtMjYuNDQxIDc1Ljk0OSAwIDI0LjE3Mi0wLjM5NDUzIDM3LjM1NSA4Ljc4MTIgNjAuMzAxIDYuMDM5MSAxNS4xMTMgMTUuNzg1IDI2LjgzNiAyNy43MjMgMzYuMzg3IDI4LjY5MSAyMi45MyA2MC44NzUgMjEuNTQ3IDk0LjE4NCAyMS41NDd2MzQuOTQ1YzAgNi4wMzkxIDQuOTMzNiAxNC40ODQgOC4xMjg5IDE3LjY4IDEuNzM4MyAxLjczODMgNS41NjY0IDQuMjQyMiA3LjgxMjUgNS40NjQ4IDIuOTgwNSAxLjYzNjcgNi4xNzU4IDIuNjI1IDEwLjQ3NyAyLjY0NDVoMTk1Ljg3YzYuNjQ4NCAwIDE0LjQ0NS00Ljk5MjIgMTcuOTE4LTguNzAzMSA0LjA0NjktNC4zMjAzIDcuODc1LTEwLjgzMiA3Ljg3NS0xOC43NDZ2LTQwLjc4OWg5LjE1NjJjMzAuNjA1IDAgMzQuNTEyLTQ5LjExMy0zLjMzNTktNDkuMTEzaC00MS42MTdjLTIzLjMwNSAwLTMwLjE1MiAyMC42OC0yMy41ODIgMzYuMDcgMS41MzkxIDMuNTcwMyAyLjU0NjkgNC4xMDU1IDUuMDUwOCA2LjYwOTQgOC40NDUzIDguNDY0OCAxOS41MzUgNi40MzM2IDMzLjUyNyA2LjQzMzZ2MTQuOTg4aC0yMDYuNDZ2LTIwNC43OWMwLTIuMzQ3NyAxOC45NDEtMTQuMzg3IDIzLjMyNC0xNy40NjVsNDAuNTUxLTMxLjA1OWMxMC4yODEtOC42NjQxIDIwLjIwNy0xOC4xNzIgMjAuMjA3LTMzLjA1MSAwLTExLjM4Ny04LjY4MzYtMjAuODE2LTE5Ljk2OS0yMC44MTYtMTMuMzIgMC0yNC4xNzIgOC4yNjk1LTMzLjU4NiAxMy4wNDNsLTMwLjUyNyAxNi45MXYtNDkuOTQ1aDIwNi40NnY5Mi40MDZjLTguMzQ3NyAwLTIzLjI2NiAwLjE5OTIyLTI4LjYxMyAzLjAxOTUtMjAuMTQ4IDEwLjY5NS0xNC42MjEgNDYuMDc0IDEwLjMwMSA0Ni4wNzRoNTAuNzczYzkuODg2NyAwIDIwLjgxNi0xMC4xMDIgMjAuODE2LTE5Ljk2OSAwLTkuNzA3IDAuNzUtMTYuOTQ5LTkuMDE5NS0yNC4yODktNi4xMTcyLTQuNTk3Ny0xNC41MjMtNC44NTU1LTIzLjQ0MS00Ljg1NTVsMC4wMDM5MDYtMTEwLjdjMC03LjkzMzYtMy44MjgxLTE0LjQyNi03Ljg3NS0xOC43NjYtMy40NzI3LTMuNzEwOS0xMS4yODUtOC43MDMxLTE3LjkzOC04LjcwMzFoLTE5NS42M2MtOS41ODk4IDAtMTcuMjg1IDYuMDk3Ny0yMS40MyAxMS44NTktNi4xMTcyIDguNTIzNC01LjIwNyAxNC4zNjMtNS4yMDcgMjguMDk4djY3LjQyNnptMTg2LjQ3IDEwOS44OWMwLTEwLjU1OSAxMC41MTYtMjEuNjQ4IDIwLjgxNi0yMS42NDhoNTIuNDQ5YzYuNDUzMSAwIDEyLjM1MiA0LjEyNSAxNS42MjkgNy42NzU4IDEyLjQ1MyAxMy4zOTggMy40NzI3IDQwLjYwOS0xNC44MDEgNDAuNjA5aC01Mi40NDljLTEyLjAzNSAwLTIxLjY0OC0xMC41MTYtMjEuNjQ4LTIyLjQ3N3ptMCA1Ni42MTNjMC0xMC44OTEgMTAuMzU5LTIxLjY2OCAyMy4zMjQtMjEuNjY4aDQ4LjI2NmMyMy4yMDcgMCAyOS4yNDIgMjkuOTE0IDE1LjMxMiA0Mi44MDEtNS4xNDg0IDQuNzUzOS0xMC4zNCA2LjMxMjUtMTkuNDc3IDYuMzEyNWgtNDEuNjE3Yy03LjU3ODEgMC0xNC4wNTEtMi4yMTA5LTE4LjEzMy02LTcuNDYwOS02Ljg0MzgtNy42NzU4LTEyLjk0MS03LjY3NTgtMjEuNDQ1em0tNjIuNDM0IDEwOS45M2M3LjczNDQgMCAxNC4wMTIgNi4yNzM0IDE0LjAxMiAxNC4wMTIgMCA3Ljc1MzktNi4yNzM0IDE0LjAxMi0xNC4wMTIgMTQuMDEyLTcuNzUzOSAwLTE0LjAxMi02LjI1MzktMTQuMDEyLTE0LjAxMiAwLTcuNzE0OCA2LjI1MzktMTQuMDEyIDE0LjAxMi0xNC4wMTJ6bS0zMC4wMzUtMzYzLjM4aDYwLjA0N2MxLjk5MjIgMCAzLjYyODkgMS42MzY3IDMuNjI4OSAzLjY1MjMgMCAyLjAxMTctMS42MzY3IDMuNjI4OS0zLjYyODkgMy42Mjg5aC02MC4wNDdjLTEuOTkyMiAwLTMuNjI4OS0xLjYzNjctMy42Mjg5LTMuNjI4OSAwLjAxOTUzMS0yLjAxNTYgMS42NTYyLTMuNjUyMyAzLjYyODktMy42NTIzeiIgZmlsbD0iI2ZmZiIgZmlsbC1ydWxlPSJldmVub2RkIi8+Cjwvc3ZnPgo=" alt="" class="app">
+                <p>Get the App</p>
+            </div>
+            <ul class="nav-bar">
+                <li>Investors Relations</li>
+                <li>Add restaurant</li>
+                <li>Log in</li>
+                <li>Sign up</li>
+            </ul>
+        </div>
+        <div class="head">
+            <img src="https://b.zmtcdn.com/web_assets/8313a97515fcb0447d2d77c276532a511583262271.png" alt="" class="logo">
+            <h3>Discover the best food & drinks in Patna</h3>
+            <div class="bar">
+                <div class="search-item">
+                    <i class="glyphicon glyphicon-map-marker"></i>
+                    <div><p>Mainpura</p></div>
+                </div>
+                <div class="search-item">
+                    <i class="glyphicon glyphicon-search"></i>
+                    <input type="text" placeholder="Search for restaurant, cuisine or a dish">
+                </div>
+            </div>
+        </div>
+        <img src="https://b.zmtcdn.com/web_assets/81f3ff974d82520780078ba1cfbd453a1583259680.png" alt="" class="header-image">
+    </header>
+    <!--Section 1-->
+    <section class="section-1">
+        <div class="content">
+            <div class="item">
+                <p class="heading">Orde Online</p>
+                <p>Stay home and order to your doorstep</p>
+            </div>
+            <img src="https://b.zmtcdn.com/webFrontend/e5b8785c257af2a7f354f1addaf37e4e1647364814.jpeg?output-format=webp&fit=around|402:360&crop=402:360;*,*" alt="">
+        </div>
+        <div class="content">
+            <div class="item">
+                <p class="heading">Dining Out</p>
+                <p>View the city's favourite dinings venues</p>
+            </div>
+            <img src="https://b.zmtcdn.com/webFrontend/d026b357feb0d63c997549f6398da8cc1647364915.jpeg?output-format=webp&fit=around|402:360&crop=402:360;*,*" alt="">
+        </div>
+    </section>
+    <!--Section 2-->
+    <section class="section-2">
+        <div class="heading-main">
+            <h1>Collections</h1>
+            <div>
+                <p>Explore curated lists of top restaurants, cafes, pubs, and bars in Patna, based on trends</p>
+                <p class="ext">All Collections in Patna <span class="glyphicon glyphicon-play"></span></p>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="content">
+                <div class="item">
+                    <p class="heading">Trending this Week</p>
+                    <p>30 Places<span class="glyphicon glyphicon-play"></span></p>
+                </div>
+                <img src="https://b.zmtcdn.com/data/collections/1b8c164e8a18878468d8aabeb0b486b1_1625812715.jpg?output-format=webp" alt="">
+            </div>
+            <div class="content">
+                <div class="item">
+                    <p class="heading">Must-visit restaurants in Patna</p>
+                    <p>7 Places<span class="glyphicon glyphicon-play"></span></p>
+                </div>
+                <img src="https://b.zmtcdn.com/data/collections/01ecdfff23154b32fa6bd82300acb8db_1626252143.jpg?output-format=webp" alt="">
+            </div>
+            <div class="content">
+                <div class="item">
+                    <p class="heading">Vegetarians Delight</p>
+                    <p>5 Places<span class="glyphicon glyphicon-play"></span></p>
+                </div>
+                <img src="https://b.zmtcdn.com/data/collections/a2611dbaaed9db9090eead8cf9ed0059_1528284670.jpg?output-format=webp" alt="">
+            </div>
+        </div>
+    </section>
+    <!--Section 3-->
+    <section class="section-3">
+        <div class="section-3-heading">
+            <p>Popular localities in and around Patna</p>
+        </div>
+        <div class="section-3-container">
+            <div class="section-3-items">
+                <div class="section-3-item">
+                    <p class="item-head">Fraser Road Area</p>
+                    <p class="item-subhead">170 Places</p>
+                </div>
+                <div class="section-3-item">
+                    <p class="item-head">Golambar</p>
+                    <p class="item-subhead">248 Places</p>
+                </div>
+                <div class="section-3-item">
+                    <p class="item-head">Shri Krishnapuri</p>
+                    <p class="item-subhead">250 Places</p>
+                </div>
+                <div class="section-3-item">
+                    <p class="item-head">Kankarbagh</p>
+                    <p class="item-subhead">597 Places</p>
+                </div>
+                <div class="section-3-item">
+                    <p class="item-head">Patliputra Colony</p>
+                    <p class="item-subhead">229 Places</p>
+                </div>
+                <div class="section-3-item">
+                    <p class="item-head">Lodipur</p>
+                    <p class="item-subhead">50 Places</p>
+                </div>
+                <div class="section-3-item">
+                    <p class="item-head">Khajpura Place</p>
+                    <p class="item-subhead">374 Places</p>
+                </div>
+                <div class="section-3-item">
+                    <p class="item-head">Kidwaipuri</p>
+                    <p class="item-subhead">130 Places</p>
+                </div>
+                <div class="section-3-item">
+                    <p class="item-head">Rajbansi Nagar</p>
+                    <p class="item-subhead">40 Places</p>
+                </div>
+            </div>
+        </div>
+    </section>
+     <!--Section 4-->
+     <section class="section-4">
+        <div class="section-4-container">
+            <div class="section-4-img">
+                <img src="https://b.zmtcdn.com/data/o2_assets/a500ffc2ab483bc6a550aa635f4e55531648107832.png" alt="">
+            </div>
+            <div class="section-4-content">
+                <h1>Get the Zomato App</h1>
+                <p>
+                    Download app from
+                </p>
+                <div class="section-4-download">
+                    <img src="https://b.zmtcdn.com/data/webuikit/23e930757c3df49840c482a8638bf5c31556001144.png" alt="">    
+                    <img src="https://b.zmtcdn.com/data/webuikit/9f0c85a5e33adb783fa0aef667075f9e1556003622.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer--->
+    <footer>
+        <p>
+            Made By Devanshu Kumar Ranjan 	&#128512;	&#128512;
+        </p>    
+    </footer>
+</body>
+</html>
